@@ -16,6 +16,7 @@ docker create \
   -e PASSWORD=password `#optional` \
   -e SUDO_PASSWORD=password `#optional` \
   -p 8443:8443 \
+  -v ~/config-code-server-pam:/config \
   --restart unless-stopped \
   nucklehead/code-server-pam
 ```
